@@ -40,7 +40,6 @@ const TodoList = () => {
                         />
                     ))
                 }
-                
             </ul>
         </div>
     )

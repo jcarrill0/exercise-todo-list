@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import ListItem from './ListItem'
+import PropTypes from 'prop-types';
+
 
 const TodoList = () => {
 
@@ -50,5 +52,11 @@ const TodoList = () => {
         </div>
     )
 }
+
+TodoList.propTypes = {
+    task: PropTypes.string.isRequired,
+    arrayTask: PropTypes.array,
+    taskCount: PropTypes.number
+};
 
 export default TodoList

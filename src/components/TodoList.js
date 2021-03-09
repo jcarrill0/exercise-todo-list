@@ -5,7 +5,7 @@ const TodoList = () => {
 
     const [task, setTask] = useState("");
     const [arrayTask, setArrayTask] = useState([]);
-    const [taskCount, setTaskCount] = useState(0);
+    const [taskCount, setTaskCount] = useState(arrayTask.length);
 
     function addTask() {
         if(task.trim() === "") {
